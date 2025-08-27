@@ -1,0 +1,199 @@
+:root {
+  --font-primary: "Hartwell-Regular", sans-serif;
+  --base-font-size: 16px;
+  --bg-color: #ffffff;
+  --heading-font: italic 2rem "Poppins", sans-serif;
+  --heading-color: #000000;
+  --navigation-dot-inactive-color: #d9d9d9;
+  --navigation-dot-active-color: #008fd0;
+  --review-card-background-color: #f9faff;
+  --avatar-background-color: #455a64;
+}
+
+html {
+  font-size: var(--base-font-size);
+}
+
+body {
+  font-family: var(--font-primary);
+  background: var(--bg-color);
+}
+
+.reviews-section {
+  padding: 2rem;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.reviews-title {
+  margin-bottom: 0.5rem;
+}
+
+.reviews-title .title-heading {
+  font: var(--heading-font);
+  color: var(--heading-color);
+}
+
+.reviews-title .heart-logo {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.reviews-wrapper {
+  overflow: hidden; /* Hidden overflow for sliding */
+}
+
+.reviews-container {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  transition: transform 0.3s ease-in-out;
+}
+
+.review-card {
+  background: var(--review-card-background-color);
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  flex: 0 0 calc(25% - 2.6rem); /* Desktop: 4 per row */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+  margin-left: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--avatar-background-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.review-meta {
+  text-align: left;
+  margin-top: 0.3rem;
+}
+
+.review-meta .name {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+}
+
+.star-icon {
+  margin-right: 0.5rem;
+  width: 16px;
+  height: 16px;
+}
+
+.review-text {
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: left;
+  flex: 1;
+}
+
+.carousel-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.carousel-navigation button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.carousel-navigation button img {
+  width: 12px;
+  height: 12px;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.carousel-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--navigation-dot-inactive-color);
+}
+
+.carousel-dots .dot.active {
+  background-color: var(--navigation-dot-active-color);
+}
+
+/* For Responsive Layouts */
+/* Changing Base Font Size for Responsive Layout through rem */
+@media (max-width: 1536px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .review-card {
+    flex: 0 0 calc(50% - 2.1rem); /* 2 per row for Tablet Size*/
+  }
+}
+
+/* mobile: stacked top-to-bottom  */
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  .reviews-container {
+    flex-direction: column; /* stack vertically in mobile*/
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .reviews-wrapper {
+    height: 30rem;
+  }
+
+  .review-card {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    flex: 0 0 auto;
+    height: 12em;
+  }
+}

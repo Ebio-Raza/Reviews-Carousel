@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Alice Johnson",
+    "rating": 5,
+    "review": "Fantastic service! The team went above and beyond my expectations."
+  },
+  {
+    "name": "Brian Smith",
+    "rating": 4,
+    "review": "Good experience overall. Delivery was fast but packaging could be better."
+  },
+  {
+    "name": "Catherine Lee",
+    "rating": 5,
+    "review": "Absolutely loved it! Highly recommended for anyone looking for quality. Absolutely loved it! Highly recommended for anyone looking for quality.Absolutely loved it! Highly recommended for anyone looking for quality."
+  },
+  {
+    "name": "David Brown",
+    "rating": 3,
+    "review": "It was okay. The product works fine, but I expected more features."
+  },
+  {
+    "name": "Emma Davis",
+    "rating": 4,
+    "review": "Great quality and user-friendly design. Will definitely purchase again."
+  },
+  {
+    "name": "Frank Wilson",
+    "rating": 2,
+    "review": "Not satisfied. The item arrived late and customer support was unhelpful."
+  },
+  {
+    "name": "Grace Taylor",
+    "rating": 5,
+    "review": "Wonderful experience! Smooth process and excellent customer care."
+  },
+  {
+    "name": "Henry Martinez",
+    "rating": 4,
+    "review": "Very good product. Works as described and installation was easy."
+  },
+  {
+    "name": "Isabella Lopez",
+    "rating": 5,
+    "review": "Exceeded my expectations! Superb build quality and fast shipping."
+  },
+  {
+    "name": "Jack Thompson",
+    "rating": 3,
+    "review": "Average. Product is decent but not as durable as I had hoped."
+  }
+]
